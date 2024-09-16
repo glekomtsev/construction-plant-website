@@ -1,0 +1,21 @@
+.swiper-main {
+  height: 100vh;
+  width: 100%;
+
+  .swiper-main .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-main .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet{
+
+  }
+
+  .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-vertical.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    border-radius: 100% !important;
+    background-color: #fff !important;
+    height: 12px !important;
+    width: 12px !important;
+  }
+
+  .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets{
+    right: 40px !important;
+  }
+}

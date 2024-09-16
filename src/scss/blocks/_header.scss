@@ -1,16 +1,38 @@
-.header {
-	background-color: #c0e4f4;
-	padding: 50px 0;
-
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+body {
+  position: relative;
 }
 
-.header__nav {
-	@include tablet {
-		display: none;
-	}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 0;
+  z-index: 1000;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+
+  &__border {
+    height: 100%;
+    width: 1px;
+    background-color: rgb(255, 255, 255, 0.3);
+  }
+}
+
+.hedaer__social {
+}
+.hedaer__list {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
 }
