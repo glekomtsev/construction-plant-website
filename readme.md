@@ -1,6 +1,6 @@
 # Construction Plant Website
 
-[Посетить сайт]()
+[Посетить сайт](https://glekomtsev.github.io/construction-plant-website/)
 
 ## Используемые технологии
 

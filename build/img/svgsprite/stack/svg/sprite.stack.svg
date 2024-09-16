@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 154 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 17 17" id="card" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 154 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 48 48" id="arrow-down" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="24" r="24" fill="#EC0D0D"/>
+    <path d="M19.41 22 24 26.327 28.59 22 30 23.332 24 29l-6-5.668L19.41 22Z" fill="#fff"/>
+</svg><svg fill="none" viewBox="0 0 17 17" id="card" xmlns="http://www.w3.org/2000/svg">
     <path d="M12.363 9.35c.637 0 1.198-.348 1.487-.875l3.042-5.517a.847.847 0 0 0-.74-1.258H3.578L2.778 0H0v1.7h1.7l3.058 6.452-1.147 2.074c-.62 1.138.196 2.524 1.487 2.524h10.196v-1.7H5.098l.935-1.7h6.33ZM4.384 3.4h10.324l-2.345 4.25H6.398L4.384 3.4Zm.714 10.2c-.935 0-1.69.765-1.69 1.7 0 .935.755 1.7 1.69 1.7.935 0 1.7-.765 1.7-1.7 0-.935-.765-1.7-1.7-1.7Zm8.497 0c-.935 0-1.69.765-1.69 1.7 0 .935.755 1.7 1.69 1.7.935 0 1.7-.765 1.7-1.7 0-.935-.765-1.7-1.7-1.7Z" fill="#fff"/>
 </svg><svg fill="none" viewBox="0 0 154 48" id="logo" xmlns="http://www.w3.org/2000/svg">
     <path d="M70 0H42v48h28V0Z" fill="#EC0D0D"/>

@@ -22,16 +22,43 @@ body {
   align-items: center;
   column-gap: 30px;
 
+  &__link {
+    img {
+      height: 48px;
+    }
+  }
+
   &__border {
-    height: 100%;
-    width: 1px;
+    height: 48px;
+    width: 2px;
     background-color: rgb(255, 255, 255, 0.3);
   }
 }
-
-.hedaer__social {
+.header__info {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
-.hedaer__list {
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: #fff;
+  column-gap: 40px;
+
+  a{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+  }
+}
+
+.header__social {
   display: flex;
   align-items: center;
   column-gap: 16px;

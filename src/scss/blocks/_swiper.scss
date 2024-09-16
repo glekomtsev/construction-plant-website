@@ -1,0 +1,83 @@
+.swiper-main {
+  height: 100vh;
+  width: 100%;
+
+  .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-vertical.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    border-radius: 100% !important;
+    background-color: #fff !important;
+    height: 12px !important;
+    width: 12px !important;
+  }
+
+  .swiper-vertical > .swiper-pagination-bullets,
+  .swiper-pagination-vertical.swiper-pagination-bullets {
+    right: 40px !important;
+  }
+}
+
+.swiper-down {
+  height: 100%;
+  width: 100%;
+
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 225%;
+  color: #fff;
+  cursor: default;
+
+  .swiper-wrapper {
+    transition: transform 10s linear;
+  }
+
+  .swiper-slide {
+    flex-shrink: 0;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    padding: 0 20px 4px 20px;
+    width: auto !important;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in; //плавность анимации
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px; //размер иконок
+    height: 40px;
+    margin: 0 0px; // отступы от краев
+    z-index: 10000;
+
+    &::after {
+      display: none; //отключение старых иконок
+    }
+  }
+
+  .swiper-button-prev {
+    background-image: url("./../../img/back-btn.svg");
+
+    // &:hover {
+    //   background-image: url("./../../img/main/prev-icon-hover.svg");
+    // }
+  }
+
+  .swiper-button-next {
+    background-image: url("./../../img/next-btn.svg");
+
+    // &:hover {
+    //   background-image: url("./../../img/main/next-icon-hover.svg");
+    // }
+  }
+}

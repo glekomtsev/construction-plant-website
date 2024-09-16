@@ -16,7 +16,7 @@ import Swiper from "swiper/bundle";
 // import styles bundle
 import "swiper/css/bundle";
 
-const swiper = new Swiper(".swiper-main", {
+const swiperMain = new Swiper(".swiper-main", {
   // Optional parameters
   direction: "vertical",
   mousewheel: true,
@@ -24,4 +24,17 @@ const swiper = new Swiper(".swiper-main", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+const swiperDown = new Swiper(".swiper-down", {
+  slidesPerView: "auto",
+  spaceBetween: 8,
+  loop: true,
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: false,
+  },
+  speed: 10000, 
+  slidesPerGroup: 1,
+  freeMode: true,  
 });
