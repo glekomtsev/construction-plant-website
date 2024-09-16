@@ -9,12 +9,27 @@ body {
   width: 100%;
   padding: 40px 0;
   z-index: 1000;
+  @include size-780 {
+    padding: 32px 0;
+  }
+  @include size-480 {
+    padding: 16px 0;
+  }
 }
 
 .header__row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include size-780 {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 24px;
+  }
+  @include size-480 {
+    row-gap: 12px;
+  }
 }
 
 .logo {
@@ -32,12 +47,32 @@ body {
     height: 48px;
     width: 2px;
     background-color: rgb(255, 255, 255, 0.3);
+    @include size-780 {
+      display: none;
+    }
+  }
+
+  @include size-780 {
+    justify-content: space-between;
+  }
+  @include size-480 {
+    justify-content: space-between;
   }
 }
 .header__info {
   display: flex;
   align-items: center;
   column-gap: 40px;
+  @include size-780 {
+    justify-content: space-between;
+    order: -1;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+  }
+  @include size-480 {
+    justify-content: space-between;
+    padding-bottom: 16px;
+  }
 }
 
 .header__contacts {
@@ -51,10 +86,14 @@ body {
   color: #fff;
   column-gap: 40px;
 
-  a{
+  a {
     display: flex;
     align-items: center;
     column-gap: 7px;
+  }
+  @include size-480 {
+    justify-content: space-between;
+    column-gap: 20px;
   }
 }
 
@@ -62,4 +101,8 @@ body {
   display: flex;
   align-items: center;
   column-gap: 16px;
+
+  @include size-480 {
+    display: none;
+  }
 }
