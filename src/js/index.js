@@ -34,7 +34,12 @@ const swiperDown = new Swiper(".swiper-down", {
     delay: 1,
     disableOnInteraction: false,
   },
-  speed: 10000, 
+  speed: 10000,
   slidesPerGroup: 1,
-  freeMode: true,  
+  freeMode: true,
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 });

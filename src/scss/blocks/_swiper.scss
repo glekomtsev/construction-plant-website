@@ -27,13 +27,27 @@
   line-height: 225%;
   color: #fff;
   cursor: default;
+  /* Добавляем маску с прозрачностью по краям */
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 
   .swiper-wrapper {
     transition: transform 10s linear;
   }
 
   .swiper-slide {
-    flex-shrink: 0;
     display: inline-block;
     border: 1px solid rgb(255, 255, 255, 0.3);
     padding: 0 20px 4px 20px;
