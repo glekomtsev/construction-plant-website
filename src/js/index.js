@@ -43,3 +43,15 @@ const swiperDown = new Swiper(".swiper-down", {
   //   prevEl: ".swiper-button-prev",
   // },
 });
+
+const swiperProd = new Swiper(".swiper-prod", {
+  // Optional parameters
+  slidesPerView: "auto",
+  spaceBetween: 40,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
