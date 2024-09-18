@@ -23,16 +23,44 @@ const swiperMain = new Swiper(".swiper-main", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  on: {
+    slideChange: function() {
+      if (swiperMain.activeIndex === 2) {
+        randomizeHeight();
+      }
+    },
+  },
 });
 
-// function randomizeHeight() {
-//   const items = document.querySelectorAll(".graph__item");
+function randomizeHeight() {
+  const items = document.querySelectorAll(".graph__item");
+  const styleSheet = document.createElement("style");
+  document.head.appendChild(styleSheet);
 
-//   for (const item of items) {
-//     const height = Math.floor(Math.random() * 91 + 10); // От 10 до 100
-//     item.style.height = `${height}%`;
-//   }
-// }
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+
+    // Генерация случайной высоты для основного элемента
+    const height = Math.floor(Math.random() * 91 + 10);
+    item.style.height = height + "%";
+
+    // Генерация случайной высоты для ::before
+    const beforeHeight = height - 0.95;
+
+    // Добавление динамического класса для каждого элемента
+    const className = `graph__item--${i}`; // Исправлено использование шаблонной строки
+    item.classList.add(className);
+
+    // Добавление стилей для псевдоэлемента ::before
+    styleSheet.sheet.insertRule(
+      `
+      .${className}::before {
+        height: ${beforeHeight}px;
+      }`,
+      styleSheet.sheet.cssRules.length
+    );
+  }
+}
 
 const swiperDown = new Swiper(".swiper-down", {
   slidesPerView: "auto",

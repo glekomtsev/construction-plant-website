@@ -15,6 +15,12 @@
   .swiper-pagination-vertical.swiper-pagination-bullets {
     right: 40px !important;
   }
+
+  .swiper-pagination-bullets {
+    @include size-1080 {
+      display: none !important;
+    }
+  }
 }
 
 .swiper-down {
@@ -108,9 +114,7 @@
 
 .swiper-prod {
   display: none !important;
-  @include size-780 {
-    display: block !important;
-  }
+
   height: 100%;
   width: 100%;
   padding-bottom: 200px !important;
@@ -167,5 +171,9 @@
     // &:hover {
     //   background-image: url("./../../img/main/next-icon-hover.svg");
     // }
+  }
+
+  @include size-780 {
+    display: block !important;
   }
 }
