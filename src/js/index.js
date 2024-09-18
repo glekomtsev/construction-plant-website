@@ -17,7 +17,6 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 const swiperMain = new Swiper(".swiper-main", {
-  // Optional parameters
   direction: "vertical",
   mousewheel: true,
   pagination: {
@@ -25,6 +24,15 @@ const swiperMain = new Swiper(".swiper-main", {
     clickable: true,
   },
 });
+
+// function randomizeHeight() {
+//   const items = document.querySelectorAll(".graph__item");
+
+//   for (const item of items) {
+//     const height = Math.floor(Math.random() * 91 + 10); // От 10 до 100
+//     item.style.height = `${height}%`;
+//   }
+// }
 
 const swiperDown = new Swiper(".swiper-down", {
   slidesPerView: "auto",
