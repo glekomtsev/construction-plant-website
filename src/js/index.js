@@ -91,3 +91,19 @@ const swiperProd = new Swiper(".swiper-prod", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const swiperNews = new Swiper(".swiper-news", {
+  // Optional parameters
+  slidesPerView: 1,
+  loop: false,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+});

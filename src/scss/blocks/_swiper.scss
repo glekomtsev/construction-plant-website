@@ -177,3 +177,83 @@
     display: block !important;
   }
 }
+
+.swiper-news {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px !important;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 50%);
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in; //плавность анимации
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 42px; //размер иконок
+    height: 42px;
+    margin: 0 25px; // отступы от краев
+
+    &::after {
+      display: none; //отключение старых иконок
+    }
+
+    @include size-1080 {
+      top: var(--swiper-navigation-top-offset, 80%);
+      // margin: 0 15px;
+    }
+
+    @include size-480 {
+      display: none !important;
+    }
+  }
+
+  .swiper-button-prev {
+    background-image: url("./../../img/back-btn.svg");
+
+    // &:hover {
+    //   background-image: url("./../../img/main/prev-icon-hover.svg");
+    // }
+  }
+
+  .swiper-button-next {
+    background-image: url("./../../img/next-btn.svg");
+
+    // &:hover {
+    //   background-image: url("./../../img/main/next-icon-hover.svg");
+    // }
+  }
+
+  .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-vertical.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    border-radius: 100% !important;
+    background-color: #fff !important;
+    height: 12px !important;
+    width: 12px !important;
+  }
+
+  .swiper-pagination-bullets,
+  .swiper-pagination-vertical.swiper-pagination-bullets {
+    right: 40px !important;
+  }
+
+  .swiper-horizontal > .swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal,
+  .swiper-vertical
+    > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+  .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+    width: 100%;
+    height: var(--swiper-pagination-progressbar-size, 4px);
+    left: 0;
+    top: 95% !important;
+    display: none !important;
+    @include size-480 {
+      display: block !important;
+    }
+  }
+
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #fff;
+  }
+}
